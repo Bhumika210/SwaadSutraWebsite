@@ -1,0 +1,391 @@
+body {
+    background-color: #F36A21;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.nav_main {
+    display: flex;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    margin: 20px;
+}
+
+.nav_bar {
+    display: flex;
+    margin: 30px;
+    margin-left: 700px;
+}
+
+.liii{
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav_bar li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    margin-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+   
+    list-style: none;
+}
+
+.nav_bar li:hover {
+    transform: scale(1.2);
+}
+
+.cards {
+    display: flex;
+    background-color: rgb(255, 252, 222);
+    margin: 10px;
+    border-radius: 10px;
+    width: 800px;
+}
+
+.images {
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+.card_quote {
+    margin-top: 70px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.card_2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.card_show_off {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 110px;
+    margin-bottom: 20px;
+}
+
+.search_box {
+    padding: 8px;
+    font-size: 15px;
+    border-style: none;
+}
+
+.ok_btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: none;
+    font-size: 13px;
+    font-weight: 550;
+    background-color: rgb(42, 139, 10);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.ok_btn:hover {
+    background-color: rgb(2, 84, 2);
+    color: beige;
+}
+
+.mainDivShowBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 120px;
+}
+
+.show_box {
+    position: absolute;
+    z-index: 5;
+    margin-top: -13px;
+    background-color: white;
+    color: black;
+    height: 200px;
+    width: 250px;
+    overflow-y: scroll;
+}
+
+.searchBoxList {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 0px;
+}
+
+.searchBoxListEle {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 8px;
+    border-bottom: 1px solid;
+}
+
+.hidden {
+    display: none;
+}
+
+.title{
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 5% 38%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0;
+   animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.aboutUs{
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 80%;
+    margin:7% 10%;
+    padding: 10px;
+}
+
+.aboutUsTitle{
+    margin: 13px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 750;
+}
+
+.aboutUsContainer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.aboutUsImg{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.aboutUsImg:hover{
+    transform: scale(1.1);
+}
+
+.insideDiv{
+    display: flex;
+    gap: 30px;
+    margin-top: 0;
+    margin: 20px;
+}
+
+.insideInsideDiv{
+    display: block;
+    height: auto;
+    width: 1000px;
+}
+
+.aboutUsPara{
+    margin-top: 13px;
+    font-size: 18px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.catImg{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+.catImg:hover{
+    box-shadow: 0 0 20px 5px rgb(224, 202, 0); 
+    transform: scale(1.1);
+}
+
+.categoriesTitle{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin:8% 45% 3% 45%;
+    color: white;
+}
+
+.catTxt{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.cat_options{
+    text-align: center;
+}
+
+.recipeTxt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin:8% 0% 3% 0%;
+    color: white;
+    cursor: pointer;
+}
+
+.recipes{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    margin-bottom: 2%;
+}
+
+.recipeImg{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: box-shadow 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+.recipeImg:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgb(224, 202, 0); 
+}
+
+.recipeImgTxt{
+    text-align: center;
+    margin: 15px 0%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* categories page formatting */
+.foodHeading{
+    text-align: center;
+    padding: 2%;
+}
+
+.FoodTitle{
+    color: white;
+    letter-spacing: 9px;
+    cursor: pointer;
+}
+
+.FoodSubline{
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.FoodDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.FoodImg{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-left: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.FoodImg:hover{
+    transform:scale(1.1);
+}
+
+.FoodImgText{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.FoodChoices{
+    margin-top: 3.5%;
+    background-color: rgba(255, 255, 255, 0.732);
+    color: black;
+    padding: 20px 46px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.FoodChoices1{
+    font-weight: 800;
+    margin: 0%;
+    color:#F36A21;
+    cursor: pointer;
+}
+
+.centerDiv{
+    display: flex;
+    justify-content: center;
+    margin: 3.5%;
+}
+
+.FoodChoices2{
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #662400;
+}
+
+.FoodChoices3{
+    color: #361c0e;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.steps{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 40px;
+}
