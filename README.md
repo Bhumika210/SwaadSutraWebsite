@@ -22,7 +22,6 @@ A simple, dynamic recipe book web application built with **Node.js**, **Express*
 ## 🛠️ Setup Instructions
 
 1. Clone the Repository
-```bash
 git clone https://github.com/yourusername/recipe-book-app.git
 cd recipe-book-app
 
